@@ -1,6 +1,7 @@
 import picture from './assets/My_Picture.JPG'
 import ProfessionalTimeline from './ProfessionalTimeline.jsx'
 import ThemeToggle from './ThemeToggle.jsx'
+import { FaGithub, FaLinkedin, FaEnvelope, FaFileDownload } from 'react-icons/fa';
 
 const Showcase = () => {
 
@@ -12,22 +13,57 @@ const Showcase = () => {
 
 }
 
-const About = () =>{
-
-    return(
-        <div className="flex items-center gap-40 p-4">
+const About = () => {
+    return (
+        <div className="flex items-center gap-10 p-4">
             <img
                 src={picture}
                 alt="My_Picture"
-                className="w-48 h-auto object-contain rounded-lg"
+                className="w-44 h-auto object-contain rounded-lg"
             />
-            <p className="text-2xl font-medium dark:text-white">
-                Hi. Ermal here!!
-            </p>
-        </div>
-    )
+            <div>
+                <p className="text-2xl font-medium dark:text-white mb-4">
+                    Hi. Ermal here!!
+                </p>
+                <div className="flex items-center gap-3 flex-wrap">
+                    <a
+                        href="../public/Ermal's_CV.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 text-sm px-5 py-2 bg-gray-100 text-black dark:text-white rounded-full shadow-md  dark:bg-blue-500  transition"
+                    >
+                        Resume <FaFileDownload />
+                    </a>
 
-}
+                    <a
+                        href="https://github.com/ErmalMC"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-center text-black dark:text-white rounded p-2 transition"
+                    >
+                        <FaGithub className="w-5 h-5" />
+                    </a>
+
+                    <a
+                        href="https://www.linkedin.com/in/ermal-baki/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-center text-black dark:text-white rounded p-2 transition"
+                    >
+                        <FaLinkedin className="w-5 h-5" />
+                    </a>
+
+                    <a
+                        href="mailto:ermalbaki84@gmail.com"
+                        className="flex items-center justify-center text-black dark:text-white rounded p-2 transition"
+                    >
+                        <FaEnvelope className="w-5 h-5" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    );
+};
 
 
 
