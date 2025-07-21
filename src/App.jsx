@@ -30,14 +30,15 @@ const Showcase = () => {
 const About = () =>{
 
     return(
-        <div className='mx-auto'>
-            <img src={picture}
-                 alt="My_Picture"
-                 className='w-full max-w-sm object-contain'/>
-            <p>
-                
+        <div className="flex items-center gap-20 p-4">
+            <img
+                src={picture}
+                alt="My_Picture"
+                className="w-64 h-auto object-contain rounded-lg"
+            />
+            <p className="text-2xl font-medium">
+                Hi. Ermal here!!
             </p>
-
         </div>
     )
 
@@ -48,7 +49,7 @@ const About = () =>{
 const TotalUI = () => {
 
     return(
-        <div className="flex justify-center">
+        <div className="flex justify-center mt-28">
             <div className="w-full max-w-md">
                 <About />
 
@@ -58,14 +59,24 @@ const TotalUI = () => {
 
 }
 
+const ThemeToggle = () => {
+
+
+    return(
+        <div>
+
+        </div>
+    )
+}
 
 const App = () => {
 
 
     return (
-        <div className='bg-amber-200 min-h-screen'>
-            <h1 className="text-center font-bold text-red-400 text-9xl"> Hello world! </h1>
-            <TotalUI/>
+        <div className='min-h-screen'>
+
+
+            <TotalUI />
         </div>
 
     )
