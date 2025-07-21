@@ -18,7 +18,7 @@ const TimelineItem = ({ logo, institution, role, period, achievements, badges, i
             <p className="text-shadow-black text-sm font-medium mb-1">{period}</p>
 
             {/* Institution and role */}
-            <h3 className="text-white text-lg font-semibold">{institution}</h3>
+            <h3 className="text-black text-lg font-semibold">{institution}</h3>
             <p className="text-blue-400 text-sm mb-3">{role}</p>
 
             {/* Achievements */}
@@ -79,9 +79,9 @@ const ProfessionalTimeline = () => {
     const currentData = activeTab === 'Work' ? workData : educationData;
 
     return (
-        <div className="w-fit">
+        <div className="w-full">
             {/* Tab Navigation */}
-            <div className="flex bg-gray-800 rounded-lg p-1 mb-8 w-fit">
+            <div className="flex bg-gray-800 rounded-lg p-1 mb-8 w-full">
                 <button
                     onClick={() => setActiveTab('Work')}
                     className={`px-6 py-2 rounded-md text-sm font-medium transition-colors ${

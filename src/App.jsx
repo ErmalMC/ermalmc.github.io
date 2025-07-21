@@ -1,5 +1,6 @@
 import picture from './assets/My_Picture.JPG'
 import ProfessionalTimeline from './ProfessionalTimeline.jsx'
+import ThemeToggle from './ThemeToggle.jsx'
 
 const Showcase = () => {
 
@@ -14,13 +15,13 @@ const Showcase = () => {
 const About = () =>{
 
     return(
-        <div className="flex items-center gap-20 p-4">
+        <div className="flex items-center gap-40 p-4">
             <img
                 src={picture}
                 alt="My_Picture"
                 className="w-48 h-auto object-contain rounded-lg"
             />
-            <p className="text-2xl font-medium">
+            <p className="text-2xl font-medium dark:text-white">
                 Hi. Ermal here!!
             </p>
         </div>
@@ -34,7 +35,10 @@ const TotalUI = () => {
 
     return(
         <div className="flex justify-center mt-28">
-            <div className="w-full max-w-md">
+            <div className="w-full max-w-xl">
+                <div className="flex justify-end mt-4">
+                    <ThemeToggle />
+                </div>
                 <About />
                 <Showcase />
             </div>
@@ -43,23 +47,11 @@ const TotalUI = () => {
 
 }
 
-const ThemeToggle = () => {
-
-
-    return(
-        <div>
-
-        </div>
-    )
-}
-
 const App = () => {
 
 
     return (
         <div className='min-h-screen'>
-
-
             <TotalUI />
         </div>
 
