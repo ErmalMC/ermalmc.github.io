@@ -81,22 +81,22 @@ const ProfessionalTimeline = () => {
     return (
         <div className="w-full">
             {/* Tab Navigation */}
-            <div className="flex bg-gray-200 dark:bg-gray-800 rounded-lg p-1 mb-8 w-full">
+            <div className="flex w-full justify-center bg-gray-200 dark:bg-gray-800 rounded-lg p-1 mb-8">
                 <button
                     onClick={() => setActiveTab('Work')}
-                    className={`px-6 py-2 rounded-md text-sm font-medium transition-colors ${
+                    className={`flex-1 px-6 py-2 rounded-md text-sm font-medium transition-colors ${
                         activeTab === 'Work'
                             ? 'bg-gray-200 dark:bg-gray-900 text-black dark:text-white shadow-sm'
-                            : 'text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'
+                            : 'text-gray-500 hover:text-gray-900 dark:hover:text-gray-200'
                     }`}
                 >
                     Work
                 </button>
                 <button
                     onClick={() => setActiveTab('Education')}
-                    className={`px-6 py-2 rounded-md text-sm font-medium transition-colors ${
+                    className={`flex-1 px-6 py-2 rounded-md text-sm font-medium transition-colors ${
                         activeTab === 'Education'
-                            ? 'bg-gray-900 text-white shadow-sm'
+                            ? 'bg-gray-200 dark:bg-gray-900 text-black dark:text-white shadow-sm'
                             : 'text-gray-500 hover:text-gray-900 dark:hover:text-gray-200'
                     }`}
                 >
