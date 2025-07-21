@@ -51,7 +51,7 @@ const App = () => {
 
 
     return (
-        <div className='min-h-screen'>
+        <div className='min-h-screen dark:bg-gray-900'>
             <TotalUI />
         </div>
 

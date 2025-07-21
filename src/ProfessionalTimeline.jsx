@@ -15,14 +15,14 @@ const TimelineItem = ({ logo, institution, role, period, achievements, badges, i
         {/* Content */}
         <div className="flex-grow min-w-0">
             {/* Date */}
-            <p className="text-shadow-black text-sm font-medium mb-1">{period}</p>
+            <p className="text-shadow-black dark:text-white text-sm font-medium mb-1">{period}</p>
 
             {/* Institution and role */}
-            <h3 className="text-black text-lg font-semibold">{institution}</h3>
+            <h3 className="text-black dark:text-white text-lg font-semibold">{institution}</h3>
             <p className="text-blue-400 text-sm mb-3">{role}</p>
 
             {/* Achievements */}
-            <ul className="space-y-2 text-black text-sm mb-4">
+            <ul className="space-y-2 text-black dark:text-white text-sm mb-4">
                 {achievements.map((achievement, index) => (
                     <li key={index} className="flex items-start">
                         <span className="text-gray-500 mr-2 mt-1.5">•</span>
@@ -81,13 +81,13 @@ const ProfessionalTimeline = () => {
     return (
         <div className="w-full">
             {/* Tab Navigation */}
-            <div className="flex bg-gray-800 rounded-lg p-1 mb-8 w-full">
+            <div className="flex bg-gray-200 dark:bg-gray-800 rounded-lg p-1 mb-8 w-full">
                 <button
                     onClick={() => setActiveTab('Work')}
                     className={`px-6 py-2 rounded-md text-sm font-medium transition-colors ${
                         activeTab === 'Work'
-                            ? 'bg-gray-900 text-white shadow-sm'
-                            : 'text-gray-400 hover:text-gray-200'
+                            ? 'bg-gray-200 dark:bg-gray-900 text-black dark:text-white shadow-sm'
+                            : 'text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'
                     }`}
                 >
                     Work
@@ -97,7 +97,7 @@ const ProfessionalTimeline = () => {
                     className={`px-6 py-2 rounded-md text-sm font-medium transition-colors ${
                         activeTab === 'Education'
                             ? 'bg-gray-900 text-white shadow-sm'
-                            : 'text-gray-400 hover:text-gray-200'
+                            : 'text-gray-500 hover:text-gray-900 dark:hover:text-gray-200'
                     }`}
                 >
                     Education
