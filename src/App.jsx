@@ -27,7 +27,7 @@ const About = () => {
                 </p>
                 <div className="flex items-center gap-3 flex-wrap">
                     <a
-                        href="../public/Ermal's_CV.pdf"
+                        href="/Ermal's_CV.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center gap-2 text-sm px-5 py-2 bg-gray-100 text-black dark:text-white rounded-full shadow-md  dark:bg-blue-500  transition"
