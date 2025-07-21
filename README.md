@@ -1,4 +1,10 @@
-# This is my Portfolio
+# PortFolio Website
 
-Hello this is the first draft of my portfolio <br>
-This is something shown temporarily while I develop the website
+Basic website showcasing my experience and projects that I have worked on.
+
+## It was made with:
+<ul>
+<li>React</li>
+<li>TailwindCss</li>
+<li>Vite</li>
+</ul>
