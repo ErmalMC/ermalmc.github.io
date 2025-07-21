@@ -25,7 +25,7 @@ const TimelineItem = ({ logo, institution, role, period, achievements, badges, i
             <ul className="space-y-2 text-black dark:text-white text-sm mb-4">
                 {achievements.map((achievement, index) => (
                     <li key={index} className="flex items-start">
-                        <span className="text-gray-500 mr-2 mt-1.5">•</span>
+                        <span className="text-gray-500 mr-2 mt-1.5 text-l">•</span>
                         <span>{achievement}</span>
                     </li>
                 ))}

@@ -22,8 +22,8 @@ const About = () => {
                 className="w-44 h-auto object-contain rounded-lg"
             />
             <div>
-                <p className="text-2xl font-medium dark:text-white mb-4">
-                    Hi. Ermal here!!
+                <p className="text-xl font-medium dark:text-white mb-4">
+                    Hey, Ermal here — a 21-year-old software engineer passionate about full-stack systems and robotics.
                 </p>
                 <div className="flex items-center gap-3 flex-wrap">
                     <a
