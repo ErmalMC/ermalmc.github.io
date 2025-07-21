@@ -76,7 +76,7 @@ const TotalUI = () => {
                     <ThemeToggle />
                 </div>
                 <About />
-                <Showcase />
+                <Showcase /> 
             </div>
         </div>
     )
