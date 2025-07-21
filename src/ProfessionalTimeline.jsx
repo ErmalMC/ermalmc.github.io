@@ -15,7 +15,7 @@ const TimelineItem = ({ logo, institution, role, period, achievements, badges, i
         {/* Content */}
         <div className="flex-grow min-w-0">
             {/* Date */}
-            <p className="text-shadow-black dark:text-white text-sm font-medium mb-1">{period}</p>
+            <p className="text-gray-600 dark:text-gray-300 text-sm font-medium mb-1">{period}</p>
 
             {/* Institution and role */}
             <h3 className="text-black dark:text-white text-lg font-semibold">{institution}</h3>
@@ -46,57 +46,70 @@ const TimelineItem = ({ logo, institution, role, period, achievements, badges, i
 );
 
 const ProfessionalTimeline = () => {
-    const [activeTab, setActiveTab] = useState('Work');
+    const [activeTab, setActiveTab] = useState('Experience');
 
     const workData = [
         {
-            period: "Jul 2023 - Present",
-            institution: "DBS Bank",
-            role: "Graduate Associate (SEED Programme)",
-            logo: <div className="w-8 h-8 bg-red-600 rounded flex items-center justify-center text-white font-bold text-xs">DBS</div>,
+            period: "Dec 2024 - Apr 2025",
+            institution: "BEST Skopje",
+            role: "Information Technology Responsible",
+            logo:  (
+                <img
+                    src="/BESTlogo.png"
+                    alt="BEST Logo"
+                    className="w-14 h-14 object-contain rounded"
+                />
+            ),
             achievements: [
-                "Developed the Java backend for a bank account servicing process with multiple channel integrations using Activiti workflow",
-                "Built a custom database migration tool using Python and MariaDB and facilitated the migration of 1000+ processes from a vendor platform"
+                "Directed a team of six student developers in creating and maintaining the job-fair platform, ensuring seamless coordination and on-time delivery.",
+                "Mentored team members through regular code reviews and training sessions, nurturing their professional development and fostering a collaborative culture.",
+                "Leveraged Angular to build dynamic, responsive front-end interfaces and Spring Boot to deliver scalable, secure back-end services."
             ]
         },
     ];
 
     const educationData = [
         {
-            period: "Sep 2019 - Apr 2023",
-            institution: "Digipen Institute of Technology Singapore",
-            role: "BS in Computer Science in Real-Time Interactive Simulation",
-            logo: <div className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center text-white font-bold text-xs">DP</div>,
+            period: "Oct 2022 - Jun 2026",
+            institution: "Faculty of Computer Science and Engineering",
+            role: "Bachelor of Science in Information Science",
+            logo: (
+                <img
+                    src="/finki-logo.png"
+                    alt="FINKI Logo"
+                    className="w-14 h-14 object-contain rounded"
+                />
+            ),
             achievements: [
-                "Graduated with a Minor in Mathematics",
-                "President of Digipen Student Management Committee for freshman year",
-                "3-time recipient of the Dean's Honor List"
+                "Co-authored a research paper titled 'Robotic Strategies for Orbital Sustainability: A Comparative Analysis of Capture Techniques, Guidance Systems, and Servicing Integration', focusing on space debris removal and long-term satellite servicing.",
+                "Analyzed and compared cutting-edge orbital robotics systems, proposing improvements to existing guidance and capture mechanisms.",
+                "Currently developing a compact folding robot prototype designed for constrained environments, utilizing modular mechanical components and embedded systems.",
             ],
-            badges: ["Final Year Project", "2nd Year Project"]
+            badges: []
         },
     ];
 
-    const currentData = activeTab === 'Work' ? workData : educationData;
+    const currentData = activeTab === 'Experience' ? workData : educationData;
 
     return (
         <div className="w-full">
             {/* Tab Navigation */}
             <div className="flex w-full justify-center bg-gray-200 dark:bg-gray-800 rounded-lg p-1 mb-8">
                 <button
-                    onClick={() => setActiveTab('Work')}
+                    onClick={() => setActiveTab('Experience')}
                     className={`flex-1 px-6 py-2 rounded-md text-sm font-medium transition-colors ${
-                        activeTab === 'Work'
-                            ? 'bg-gray-200 dark:bg-gray-900 text-black dark:text-white shadow-sm'
+                        activeTab === 'Experience'
+                            ? 'bg-gray-400 dark:bg-gray-900 text-black dark:text-white shadow-sm'
                             : 'text-gray-500 hover:text-gray-900 dark:hover:text-gray-200'
                     }`}
                 >
-                    Work
+                    Experience
                 </button>
                 <button
                     onClick={() => setActiveTab('Education')}
                     className={`flex-1 px-6 py-2 rounded-md text-sm font-medium transition-colors ${
                         activeTab === 'Education'
-                            ? 'bg-gray-200 dark:bg-gray-900 text-black dark:text-white shadow-sm'
+                            ? 'bg-gray-400 dark:bg-gray-900 text-black dark:text-white shadow-sm'
                             : 'text-gray-500 hover:text-gray-900 dark:hover:text-gray-200'
                     }`}
                 >
