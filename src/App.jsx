@@ -1,27 +1,11 @@
 import picture from './assets/My_Picture.JPG'
-
-const Navbody = () => {
-    return (
-        <div>
-
-        </div>
-    )
-}
-
-const Navbar = () => {
-    return (
-        <div>
-
-        </div>
-    )
-}
+import ProfessionalTimeline from './ProfessionalTimeline.jsx'
 
 const Showcase = () => {
 
     return(
-        <div>
-
-
+        <div className='mt-10'>
+            <ProfessionalTimeline />
         </div>
     )
 
@@ -34,7 +18,7 @@ const About = () =>{
             <img
                 src={picture}
                 alt="My_Picture"
-                className="w-64 h-auto object-contain rounded-lg"
+                className="w-48 h-auto object-contain rounded-lg"
             />
             <p className="text-2xl font-medium">
                 Hi. Ermal here!!
@@ -52,7 +36,7 @@ const TotalUI = () => {
         <div className="flex justify-center mt-28">
             <div className="w-full max-w-md">
                 <About />
-
+                <Showcase />
             </div>
         </div>
     )
