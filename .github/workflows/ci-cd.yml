@@ -23,7 +23,6 @@ jobs:
           npm install
           npm install --global gh-pages
 
-      
       - name: Log in to Docker Hub
         uses: docker/login-action@v2
         with:
@@ -37,12 +36,11 @@ jobs:
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/portfolio:latest
 
-      
       - name: Deploy to GitHub Pages
         run: |
           npm run build
           git config --global user.email "github-actions@github.com"
           git config --global user.name "GitHub Actions"
-          gh-pages -d dist -b gh-pages -r https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+          gh-pages -d dist -b gh-pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
