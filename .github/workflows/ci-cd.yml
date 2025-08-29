@@ -43,4 +43,6 @@ jobs:
           npm run build
           git config --global user.email "github-actions@github.com"
           git config --global user.name "GitHub Actions"
-          gh-pages -d dist -b gh-pages -r https://x-
+          gh-pages -d dist -b gh-pages -r https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
