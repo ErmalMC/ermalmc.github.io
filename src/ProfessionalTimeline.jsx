@@ -63,7 +63,8 @@ const ProfessionalTimeline = () => {
             achievements: [
                 "Directed a team of six student developers in creating and maintaining the job-fair platform, ensuring seamless coordination and on-time delivery.",
                 "Mentored team members through regular code reviews and training sessions, nurturing their professional development and fostering a collaborative culture.",
-                "Leveraged Angular to build dynamic, responsive front-end interfaces and Spring Boot to deliver scalable, secure back-end services."
+                "Leveraged Angular to build dynamic, responsive front-end interfaces and Spring Boot to deliver scalable, secure back-end services.",
+                "Test with Docker"
             ]
         },
     ];
