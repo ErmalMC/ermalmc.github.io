@@ -1,6 +1,0 @@
-version: '3'
-services:
-  portfolio:
-    image: ermalmc/portfolio:latest
-    ports:
-      - "3000:80"
