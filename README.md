@@ -12,7 +12,7 @@ This is my personal portfolio website showcasing my experience, projects, and te
 ## Built With
 - **React**  
 - **TailwindCSS**  
-- **Vite**
+- **Vite** 
 
 ---
 
