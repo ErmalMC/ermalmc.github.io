@@ -3,6 +3,8 @@
 [![Portfolio Live](https://img.shields.io/badge/Live-GitHub%20Pages-blue)](https://ErmalMC.github.io/)
 [![CI/CD](https://github.com/ErmalMC/ermalmc.github.io/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/ErmalMC/ermalmc.github.io/actions/workflows/ci-cd.yml)
 [![Docker](https://img.shields.io/badge/Docker-Ready-blue?logo=docker)](https://hub.docker.com/repository/docker/ermalmc/portfolio)
+[![Try It](https://img.shields.io/badge/Play%20with%20Docker-Launch-blue?logo=docker)](https://labs.play-with-docker.com/?stack=https://raw.githubusercontent.com/ErmalMC/ermalmc.github.io/main/docker-compose.yml)
+
 
 This is my personal portfolio website showcasing my experience, projects, and technical skills.
 
