@@ -1,4 +1,4 @@
-name: CI/CD: Docker + GitHub Pages
+name: CI/CD - Docker and GitHub Pages
 
 on:
   push:
