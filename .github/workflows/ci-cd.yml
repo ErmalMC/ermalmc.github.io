@@ -1,3 +1,6 @@
+permissions:
+  contents: write
+
 name: CI/CD - Docker + GitHub Pages
 
 on:
@@ -9,24 +12,19 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    steps:
 
-      
+    steps:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      
       - name: Set up Node
         uses: actions/setup-node@v3
         with:
           node-version: '18'
 
-      
       - name: Install dependencies
-        run: |
-          npm install
+        run: npm install
 
-      
       - name: Log in to Docker Hub
         uses: docker/login-action@v2
         with:
@@ -42,15 +40,13 @@ jobs:
             ${{ secrets.DOCKER_USERNAME }}/portfolio:latest
             ${{ secrets.DOCKER_USERNAME }}/portfolio:${{ github.sha }}
 
-      
       - name: Build React app
         run: npm run build
 
-      
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3.9.3
         with:
-          personal_token: ${{ secrets.GH_PAT }}      
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
           publish_branch: gh-pages
           force_orphan: true
