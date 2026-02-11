@@ -108,7 +108,9 @@ const ProfessionalTimeline = () => {
                 "Directed a team of six student developers in creating and maintaining the job-fair platform, ensuring seamless coordination and on-time delivery.",
                 "Mentored team members through regular code reviews and training sessions, nurturing their professional development and fostering a collaborative culture.",
                 "Leveraged Angular to build dynamic, responsive front-end interfaces and Spring Boot to deliver scalable, secure back-end services."
-            ]
+            ],
+            badges: ["Angular", "SpringBoot", "MySQL"],
+            liveUrl:'https://vjobfair.org.mk/'
         },
     ];
 
@@ -125,9 +127,20 @@ const ProfessionalTimeline = () => {
                 />
             ),
             achievements: [
-                "Co-authored a research paper titled 'Robotic Strategies for Orbital Sustainability: A Comparative Analysis of Capture Techniques, Guidance Systems, and Servicing Integration', focusing on space debris removal and long-term satellite servicing.",
+                <>
+                    Co-authored a research paper titled{" "}
+                    <a
+                        href="/public/Robotic_Strategies_for_Orbital_Sustainability.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-400 hover:text-blue-300 underline underline-offset-2 transition"
+                    >
+                        'Robotic Strategies for Orbital Sustainability: A Comparative Analysis of Capture Techniques, Guidance Systems, and Servicing Integration'
+                    </a>
+                    , focusing on space debris removal and long-term satellite servicing.
+                </>,
                 "Analyzed and compared cutting-edge orbital robotics systems, proposing improvements to existing guidance and capture mechanisms.",
-                "Developed a compact folding robot prototype designed for constrained environments, utilizing modular mechanical components and embedded systems.",
+                "Developed a compact folding robot prototype designed for constrained environments, utilizing modular mechanical components and embedded systems."
             ],
             badges: []
         },
@@ -145,9 +158,24 @@ const ProfessionalTimeline = () => {
                 "Implemented macro calculator and integrated 100+ food database with smart search and meal logging features",
                 "Created responsive UI with real-time updates, data visualization charts, and intuitive user experience using TailwindCSS"
             ],
-            badges: ["React", ".NET 9", "MySQL", "TailwindCSS", "Entity Framework", "JWT"],
+            badges: ["React", ".NET 9", "MySQL", "TailwindCSS"],
             githubUrl: "https://github.com/ErmalMC/PureForm",
             liveUrl: "https://pure-form-one.vercel.app",
+        },
+        {
+            period: "2026",
+            institution: "EVBGLASS",
+            role: "Frontend Developer",
+            logo: "🏭",
+            achievements: [
+                "Delivered production-ready corporate website for glass manufacturing company",
+                "Engineered fully responsive React application with TailwindCSS, ensuring seamless experience across all devices",
+                "Architected custom i18n solution supporting Macedonian, English, and Albanian without third-party libraries",
+                "Developed dynamic product catalog featuring real-time search and interactive image galleries with error handling",
+                "Managed end-to-end client collaboration from initial requirements to production deployment"
+            ],
+            badges: ["React", "TailwindCSS", "Multilingual", "Responsive", "Client Project"],
+            liveUrl: "https://evbglass.mk",
         },
         
     ];
