@@ -130,7 +130,7 @@ const ProfessionalTimeline = () => {
                 <>
                     Co-authored a research paper titled{" "}
                     <a
-                        href="/public/Robotic_Strategies_for_Orbital_Sustainability.pdf"
+                        href="/Robotic_Strategies_for_Orbital_Sustainability.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-blue-400 hover:text-blue-300 underline underline-offset-2 transition"
